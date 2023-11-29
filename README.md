@@ -23,3 +23,6 @@ Remember to run `:PlugInstall` inside of neovim to install the plugins in the .v
 
 ## .tmux.conf
 All you should need to do is run `brew install tmux`. Then source your tmux file using `tmux source ~/.tmux.conf` and you're good to go.
+
+## Custom Keybinds to Remember
+ - This is a placeholder for now.

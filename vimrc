@@ -41,7 +41,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
   Plug 'tomasiser/vim-code-dark'
   Plug 'preservim/nerdtree'
-" add a plugin for command-t
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } 
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 
@@ -56,7 +58,11 @@ nnoremap N Nzz
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
+
+" Telescope Remaps
+nnoremap <C-f> :Telescope find_files<CR>
+
 
 " =======================================================
 " VIM SCRIPTS

@@ -63,7 +63,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 " nnoremap <C-f> :NERDTreeFind<CR>
 
 " Telescope Remaps
-nnoremap <C-f> :Telescope find_files<CR>
+nnoremap <C-p> :Telescope find_files<CR>
+nnoremap <C-f> :Telescope live_grep<CR>
 
 " Vim Prettier
 let g:prettier#autoformat = 1
@@ -126,6 +127,11 @@ set statusline+=\ row:\ %l\ col:\ %c\ percent:\ %p%%
 
 " Show the status on the second to last line.
 set laststatus=2
+
+" =======================================================
+" MISC
+" =======================================================
+set noswapfile
 
 " =======================================================
 " STYLING (This has to be at the end in order to load correctly)

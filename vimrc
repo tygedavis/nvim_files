@@ -9,6 +9,8 @@ filetype indent on         " Load an indent file for the detected file type.
 set number relativenumber  " Add numbers to each line on the left-hand side.
 set cursorline             " Highlight cursor line underneath the cursor horizontally.
 set tabstop=4              " Set tab width to 4 columns.
+set softtabstop=0 noexpandtab
+set shiftwidth=4
 set nobackup               " Do not save backup files.
 set scrolloff=10           " Do not let cursor scroll below or above N number of lines when scrolling.
 set nowrap                 " Do not wrap lines. Allow long lines to extend as far as the line goes.
@@ -63,6 +65,10 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 " Telescope Remaps
 nnoremap <C-f> :Telescope find_files<CR>
 
+" Vim Prettier
+let g:prettier#autoformat = 1
+let g:prettier#config#tab_width = 4
+let g:prettier#config#use_tabs = 'false'
 
 " =======================================================
 " VIM SCRIPTS

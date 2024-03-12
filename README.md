@@ -22,7 +22,11 @@ source ~/.vimrc
 Remember to run `:PlugInstall` inside of neovim to install the plugins in the .vimrc file.
 
 ## .tmux.conf
-All you should need to do is run `brew install tmux`. Then source your tmux file using `tmux source ~/.tmux.conf` and you're good to go.
+Install tmux using `brew install tmux`. Then source your tmux file using `tmux source ~/.tmux.conf`.
+
+### tmux plugins
+If you don't already, add the [tpm](https://github.com/tmux-plugins/tpm) repo to your .tmux/config
+After that, source the .tmux file and install the plugins using prefix + I. Note, for the catpuccino theme to work properly, you may need to install a Nerd Font. I recommend [Commit Mono](https://www.programmingfonts.org/#commit-mono)
 
 ## Custom Keybinds to Remember
  - This is a placeholder for now.
